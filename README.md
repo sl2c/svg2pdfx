@@ -6,7 +6,7 @@ At the time when I started writing it, I was beginning to learn SVG and PDF synt
 
 So, how hard could it be to write such a parser? After all, both SVG and PDF are vector formats, both use Bezier splines for vector graphics, fonts for text and images for, well, images. At least, so I thought when I started. In reality, the job was anything but boring. 
 
-So, if you're interested in the particular task of parsing SVG to PDF, or you are learning SVG, PDF, or both, as I was, or if you just, read on.
+So, if you're interested in the particular task of parsing SVG to PDF, or you are learning SVG, PDF, or both, as I was, read on. I will try to make it interesting.
 
 # Status
 
