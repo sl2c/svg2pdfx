@@ -2,7 +2,7 @@
 
 This is my attempt to write an SVG-to-PDF parser in under 1k lines of pure Python: a kind of reference implementation that should, hopefully, do a better job compared to most parsers I've seen (for the definition and measure of 'better' please see the benchmarks section below).
 
-At the time when I started writing it, I was beginning to learn SVG and PDF syntaxes. And what better way to learn a syntax than writing a parser for it? Another motivation was my frustration with many existing parsers which didn't quite do what I expected they should.
+At the time when I started writing it, I was beginning to learn SVG and PDF syntaxes. And what better way to learn a syntax than writing a parser for it? Another motivation was my frustration with many existing parsers which didn't quite do what I thought they should.
 
 So, how hard could it be to write such a parser? After all, both SVG and PDF are vector formats, both use Bezier splines for vector graphics, fonts for text and images for, well, images. At least, so I thought when I started. In reality, the job was anything but boring. 
 
