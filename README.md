@@ -13,8 +13,22 @@ So, if you're interested in the particular task of parsing SVG to PDF, or you ar
 The module can be used as a class library, or as a command-line tool:
 
 ```bash
-svg2pdfx [-debug] [-o output.pdf] input1.svg [input2.svg ...]
+svg2pdfx.py [-debug] [-o output.pdf] input1.svg [input2.svg ...]
 ```
+
+This invocation converts several SVG files into a single PDF file.
+
+# Features
+
+## Use of XObject-s
+
+What immediately sets svg2pdfx apart from other such converters is the fact that if the same (see below for the definition of 'same') object is defined multiple times in the same SVG file, or in different SVG files given on the command line, they will be defined just once in output PDF. This is done using XObjects. This may help significantly reduce the resulting file size in some cases.
+
+A note on Adobe Acrobat/Reader: while Adobe's products seem to use caching for rendering vector fonts, just as their own PDF Reference (ver.1.7, sec. 5.1) suggests:
+
+> Programmers who have experience with scan conversion of general shapes may be concerned about the amount of computation that this description seems to imply. However, this is only the abstract behavior of glyph descriptions and font programs, not how they are implemented. In fact, an efficient implementation can be achieved through careful caching and reuse of previously rendered glyphs.
+
+no caching is done for rendering XObject-s. So, if there are lots of them rendering may be slow. However, you can use other tools (like e.g. ghostscript) to easily convert (dereference) XObject-s into page contents stream operators.
 
 # Status
 
