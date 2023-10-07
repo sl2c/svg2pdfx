@@ -22,7 +22,7 @@ This invocation converts several SVG files into a single PDF file.
 
 ## Use of XObject-s
 
-What immediately sets svg2pdfx apart from other such converters is the fact that if the same (see below for the definition of 'same') object is defined multiple times in the same SVG file, or in different SVG files given on the command line, they will be defined just once in output PDF. This is done using XObjects. This may help significantly reduce the resulting file size in some cases.
+What immediately sets svg2pdfx apart from other such converters is the fact that if the same (see below for the definition of 'same') object is defined multiple times in the same SVG file, or in different SVG files given on the command line, they will be defined just once in output PDF. This is done using XObject-s. This may help significantly reduce the resulting file size in some cases.
 
 A note on Adobe Acrobat/Reader: while Adobe's products seem to use caching for rendering vector fonts, just as their own PDF Reference (ver.1.7, sec. 5.1) suggests:
 
