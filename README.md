@@ -8,6 +8,14 @@ So, how hard could it be to write such a parser? After all, both SVG and PDF are
 
 So, if you're interested in the particular task of parsing SVG to PDF, or you are learning SVG, PDF, or both, as I was, read on. I will try to make it interesting.
 
+# Usage
+
+The module can be used as a class library, or as a command-line tool:
+
+```bash
+svg2pdfx [-debug] [-o output.pdf] input1.svg [input2.svg ...]
+```
+
 # Status
 
 Currently, svg2pdfx supports most of the SVG v1.1 specification (detailed summary will follow soon) and passes the overwhelming majority of the tests in the SVG test suite (see the Benchmarks section below). I am open-sourcing this project at this time in order to try to attract interested developers to help bring this project to shine. The goal is full support of SVG v1.1 except the animated features.
